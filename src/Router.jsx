@@ -4,11 +4,13 @@ import ProjectsPage from "./ProjectsPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage/>,
     children: [
       {
-        path: "/projects",
+        path: "/",
+        element: <HomePage/>,
+      },
+      {
+        path: "/projects/",
         element: <ProjectsPage/>,
       }
     ],

@@ -1,13 +1,31 @@
-
 import Layout from "./Layout.jsx";
+import PropTypes from "prop-types";
+import {Button, Card, Col, Row} from "react-bootstrap";
+
+import {PROJECTS} from "./Projects.jsx";
+import {ProjectCard} from "./ProjectDisplays.jsx";
+import {Helmet} from "react-helmet";
+
+
 
 const ProjectsPage = () => (
   <Layout>
-    <h1>Projects</h1>
-    <ul>
-      <li><a href="https://www.github.com/zachbroad/">Github</a></li>
-      <li><a href="/projects/">Projects</a></li>
-    </ul>
+    <Helmet>
+      <title>Zach Broad — Projects</title>
+    </Helmet>
+      <Row>
+          <Col className={"my-2"}>
+              <div className="d-flex flex-column align-items-center my-4 text-center">
+                  <h1 style={{fontWeight: "bold"}}>Projects</h1>
+                  <p></p>
+              </div>
+          </Col>
+      </Row>
+    <Row>
+      {PROJECTS.map((value, idx) => (
+        <ProjectCard projectData={value} key={idx}/>
+      ))}
+    </Row>
   </Layout>
 );
 
