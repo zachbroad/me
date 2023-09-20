@@ -16,14 +16,18 @@ export const PROJECTS = [
       "Developed a full-stack mobile & web app for users to explore & share their Spotify listening history & habits with friends.",
       "Built with Django + Django REST Framework as backend & React as a web frontend.",
     ],
+    button: {
+      text: "Frontend",
+      link: "https://github.com/zachbroad/echo"
+    },
     button2: {
+      text: "Backend",
+      link: "https://github.com/zachbroad/echo_backend"
+    },
+    button3: {
       text: "App Website",
       link: "https://www.echoyourmusic.com/"
     },
-    button: {
-      text: "View on GitHub",
-      link: "https://github.com/zachbroad/echo"
-    }
   },
   {
     title: "Internet Relay (IRC) Server",
@@ -123,7 +127,7 @@ export const PROJECTS = [
       text: "View on GitHub",
       link: "https://github.com/zachbroad/instock"
     },
-    button2: {
+    button3: {
       text: "View Website",
       link: "https://www.salibasrugcleaners.com/"
     }

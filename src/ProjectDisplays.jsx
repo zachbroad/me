@@ -9,7 +9,8 @@ const PROJECT_PROPTYPES = {
     image: PropTypes.string,
     points: PropTypes.arrayOf(PropTypes.string),
     button: PropTypes.shape({text: PropTypes.string, link: PropTypes.string}),
-    button2: PropTypes.shape({text: PropTypes.string, link: PropTypes.string})
+    button2: PropTypes.shape({text: PropTypes.string, link: PropTypes.string}),
+    button3: PropTypes.shape({text: PropTypes.string, link: PropTypes.string})
   })
 };
 
@@ -41,8 +42,13 @@ export const ProjectCard = ({projectData}) => {
             {projectData.button.text}
           </Button>
           {projectData.button2 &&
-            <Button variant={"dark"} as={Link} to={projectData.button2.link} target={"_blank"}>
+            <Button variant={"success"} as={Link} to={projectData.button2.link} className={"me-2"} target={"_blank"}>
               {projectData.button2.text}
+            </Button>
+          }
+          {projectData.button3 &&
+            <Button variant={"dark"} as={Link} to={projectData.button3.link} target={"_blank"}>
+              {projectData.button3.text}
             </Button>
           }
         </Card.Footer>
@@ -82,8 +88,13 @@ export const ProjectInline = ({projectData}) => {
               {projectData.button.text}
             </Button>
             {projectData.button2 &&
-              <Button variant={"dark"} as={Link} to={projectData.button2.link} target={"_blank"}>
+              <Button variant={"success"} as={Link} to={projectData.button2.link} className={"me-2"} target={"_blank"}>
                 {projectData.button2.text}
+              </Button>
+            }
+            {projectData.button3 &&
+              <Button variant={"dark"} as={Link} to={projectData.button3.link} target={"_blank"}>
+                {projectData.button3.text}
               </Button>
             }
           </div>
