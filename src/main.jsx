@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {RouterProvider} from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
-import {RouterProvider} from "react-router-dom";
 import Loader from "./Loader.jsx";
 import router from "./Router.jsx";
 

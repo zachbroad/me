@@ -2,6 +2,17 @@ import {Button, Card, Col, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 
+const PROJECT_PROPTYPES = {
+  projectData: PropTypes.shape({
+    title: PropTypes.string,
+    subheading: PropTypes.string,
+    image: PropTypes.string,
+    points: PropTypes.arrayOf(PropTypes.string),
+    button: PropTypes.shape({text: PropTypes.string, link: PropTypes.string}),
+    button2: PropTypes.shape({text: PropTypes.string, link: PropTypes.string})
+  })
+};
+
 export const ProjectCard = ({projectData}) => {
   return (
     <Col sm={12} md={4} className="mb-3">
@@ -10,14 +21,7 @@ export const ProjectCard = ({projectData}) => {
           <Link to={projectData.button.link}>
             <Card.Img
               src={projectData.image}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover' // This ensures the image is resized correctly within the container
-              }}
+              style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover'}}
             />
           </Link>
         </div>
@@ -33,10 +37,13 @@ export const ProjectCard = ({projectData}) => {
           </ul>
         </Card.Body>
         <Card.Footer>
-          <Button variant={"success"} as={Link} to={projectData.button.link}
-                  className={"me-2"}>{projectData.button.text}</Button>
+          <Button variant={"success"} as={Link} to={projectData.button.link} className={"me-2"} target={"_blank"}>
+            {projectData.button.text}
+          </Button>
           {projectData.button2 &&
-            <Button variant={"dark"} as={Link} to={projectData.button2.link}>{projectData.button2.text}</Button>
+            <Button variant={"dark"} as={Link} to={projectData.button2.link} target={"_blank"}>
+              {projectData.button2.text}
+            </Button>
           }
         </Card.Footer>
       </Card>
@@ -44,25 +51,9 @@ export const ProjectCard = ({projectData}) => {
   );
 }
 
+ProjectCard.propTypes = PROJECT_PROPTYPES;
 
-ProjectCard.propTypes = {
-  projectData: PropTypes.shape(
-    {
-      title: PropTypes.string,
-      subheading: PropTypes.string,
-      image: PropTypes.string,
-      points: PropTypes.arrayOf(PropTypes.string),
-      button: PropTypes.shape({
-        text: PropTypes.string,
-        link: PropTypes.string
-      }),
-      button2: PropTypes.shape({
-        text: PropTypes.string,
-        link: PropTypes.string
-      })
-    }
-  )
-}
+
 export const ProjectInline = ({projectData}) => {
   return (
     <Row>
@@ -70,16 +61,8 @@ export const ProjectInline = ({projectData}) => {
         <Link to={projectData.button.link}>
           <div style={{paddingTop: '100%', position: 'relative', width: '100%'}}>
             <img
-              src={projectData.image}
-              alt="Project Image"
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover' // This ensures the image is resized correctly within the container
-              }}
+              src={projectData.image} alt="Project Image"
+              style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover'}}
             />
           </div>
         </Link>
@@ -95,10 +78,13 @@ export const ProjectInline = ({projectData}) => {
           </ul>
 
           <div className="mt-auto">
-            <Button variant={"success"} as={Link} to={projectData.button.link}
-                    className={"me-2"}>{projectData.button.text}</Button>
+            <Button variant={"success"} as={Link} to={projectData.button.link} className={"me-2"} target={"_blank"}>
+              {projectData.button.text}
+            </Button>
             {projectData.button2 &&
-              <Button variant={"dark"} as={Link} to={projectData.button2.link}>{projectData.button2.text}</Button>
+              <Button variant={"dark"} as={Link} to={projectData.button2.link} target={"_blank"}>
+                {projectData.button2.text}
+              </Button>
             }
           </div>
         </div>
@@ -108,21 +94,4 @@ export const ProjectInline = ({projectData}) => {
   );
 }
 
-ProjectInline.propTypes = {
-  projectData: PropTypes.shape(
-    {
-      title: PropTypes.string,
-      subheading: PropTypes.string,
-      image: PropTypes.string,
-      points: PropTypes.arrayOf(PropTypes.string),
-      button: PropTypes.shape({
-        text: PropTypes.string,
-        link: PropTypes.string
-      }),
-      button2: PropTypes.shape({
-        text: PropTypes.string,
-        link: PropTypes.string
-      })
-    }
-  )
-}
+ProjectInline.propTypes = PROJECT_PROPTYPES;

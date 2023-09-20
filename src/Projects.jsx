@@ -9,6 +9,23 @@ import salibas from "../public/salibas.png";
 
 export const PROJECTS = [
   {
+    title: "ECHO for Spotify",
+    subheading: "Python/Django + JavaScript/React (July 2023 - Sept 2023)",
+    image: echo, // replace with your image path
+    points: [
+      "Developed a full-stack mobile & web app for users to explore & share their Spotify listening history & habits with friends.",
+      "Built with Django + Django REST Framework as backend & React as a web frontend.",
+    ],
+    button2: {
+      text: "App Website",
+      link: "https://www.echoyourmusic.com/"
+    },
+    button: {
+      text: "View on GitHub",
+      link: "https://github.com/zachbroad/echo"
+    }
+  },
+  {
     title: "Internet Relay (IRC) Server",
     subheading: "Java (July 2023 - Aug 2023)",
     image: irc, // replace with your image path
@@ -24,24 +41,7 @@ export const PROJECTS = [
     }
   },
   {
-    title: "ECHO for Spotify",
-    subheading: "Python/Django + JavaScript/React (July 2023 - Sept 2023)",
-    image: echo, // replace with your image path
-    points: [
-      "Developed a full-stack mobile & web app for users to explore & share their Spotify listening history & habits with friends.",
-      "Built with Django + Django REST Framework as backend & React as a web frontend.",
-    ],
-    button: {
-      text: "App Website",
-      link: "https://www.echoyourmusic.com/"
-    },
-    button2: {
-      text: "View on GitHub",
-      link: "https://github.com/zachbroad/echo"
-    }
-  },
-  {
-    title: "FrenchieWiki",
+    title: "FrenchieWiki.com",
     subheading: "Gatsby.JS → Wordpress (2018 - Present)",
     image: fw,
     points: [
