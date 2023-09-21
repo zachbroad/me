@@ -15,6 +15,7 @@ export const PROJECTS = [
     points: [
       "Developed a full-stack mobile & web app for users to explore & share their Spotify listening history & habits with friends.",
       "Built with Django + Django REST Framework as backend & React as a web frontend.",
+      "Pending approval from Spotify for API Quota Extension."
     ],
     button: {
       text: "Frontend",
