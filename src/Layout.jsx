@@ -1,9 +1,10 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import PropTypes from "prop-types";
 import {Link, NavLink} from "react-router-dom";
+import "./Layout.scss";
 
 const Navigation = () => (
-  <Navbar expand="lg" className="bg-body-secondary">
+  <Navbar expand="lg" className="header-nav">
     <Container>
       <Navbar.Brand as={Link} to={"/"}><b>Zach Broad</b></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

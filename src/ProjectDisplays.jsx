@@ -63,7 +63,7 @@ ProjectCard.propTypes = PROJECT_PROPTYPES;
 export const ProjectInline = ({projectData}) => {
   return (
     <Row>
-      <Col sm={12} md={3}>
+      <Col sm={12} md={3} className={"mb-3"}>
         <Link to={projectData.button.link}>
           <div style={{paddingTop: '100%', position: 'relative', width: '100%'}}>
             <img
