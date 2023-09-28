@@ -10,7 +10,7 @@ import salibas from "../public/salibas.png";
 export const PROJECTS = [
   {
     title: "ECHO for Spotify",
-    subheading: "Python/Django + JavaScript/React (July 2023 - Sept 2023)",
+    subheading: "Python/Django + JavaScript/React",
     image: echo, // replace with your image path
     points: [
       "Developed a full-stack mobile & web app for users to explore & share their Spotify listening history & habits with friends.",
@@ -32,7 +32,7 @@ export const PROJECTS = [
   },
   {
     title: "Internet Relay (IRC) Server",
-    subheading: "Java (July 2023 - Aug 2023)",
+    subheading: "Java",
     image: irc, // replace with your image path
     points: [
       "Implemented an IRC server based on the RFC 1459 & RFC 2812 specification.",
@@ -47,7 +47,7 @@ export const PROJECTS = [
   },
   {
     title: "FrenchieWiki.com",
-    subheading: "Gatsby.JS → Wordpress (2018 - Present)",
+    subheading: "Gatsby.JS → Wordpress",
     image: fw,
     points: [
       "Launched a blog for dog enthusiasts, originally using Gatsby.JS / React / SCSS to gain SEO speed advantages.",
@@ -62,7 +62,7 @@ export const PROJECTS = [
   },
   {
     title: "SEO Consulting / Website Redesign",
-    subheading: "July 2023 - Sept 2023",
+    subheading: "",
     image: doubleblack,
     points: [
       "Designed websites for a transportation company for their 3 locations.",
@@ -76,7 +76,7 @@ export const PROJECTS = [
   },
   {
     title: "Food Truck Finder App",
-    subheading: "Python/Django + Dart/Flutter (July 2021)",
+    subheading: "Python/Django + Dart/Flutter",
     image: foodtruck,
     points: [
       "Developed a full-stack mobile & web app for food truck owners to manage their menu & display their live location to customers.",
@@ -89,7 +89,7 @@ export const PROJECTS = [
   },
   {
     title: "Discord Bot for NFT Alerts",
-    subheading: "Python (Oct 2021)",
+    subheading: "Python",
     image: discord,
     points: [
       "Programmed a Discord bot to send alerts for Solana NFT sales.",
@@ -103,7 +103,7 @@ export const PROJECTS = [
   },
   {
     title: "Web Scraper for CPU Stock Check",
-    subheading: "Go (Dec 2020)",
+    subheading: "Go",
     image: go,
     points: [
       "Developed a web scraper built with Go to check multiple retailers for the stock of a specific CPU during chip shortage.",
@@ -117,7 +117,7 @@ export const PROJECTS = [
   },
   {
     title: "Website for Rug Cleaning Business",
-    subheading: "ApostropheCMS & NodeJS → Gatsby.JS (July 2021)",
+    subheading: "ApostropheCMS & NodeJS → Gatsby.JS",
     image: salibas,
     points: [
       "Built a website for a rug cleaning business using ApostropheCMS / NodeJS which I later redesigned using GatsbyJS / React.",
