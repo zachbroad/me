@@ -20,9 +20,9 @@ const Skills = () => (
             "CSS/SCSS",
             "SQL",
             "Dart",
-            "Go (familiar)",
-            "PHP (familiar)",
-            "Swift (familiar)"
+            "Go",
+            "PHP",
+            "Swift"
           ].map((skill, idx, arr) => (
             <span key={idx} className="me-1">{skill}{idx !== arr.length - 1 ? "," : ""}</span>
           ))}
@@ -36,9 +36,8 @@ const Skills = () => (
             "Bootstrap",
             "React (Redux, Native)",
             "GatsbyJS",
-            "Hugo (familiar)",
-            "ApostropheCMS (familiar)",
-            "Express (familiar)"
+            "Hugo",
+            "ApostropheCMS",
           ].map((skill, idx, arr) => (
             <span key={idx} className="me-1">{skill}{idx !== arr.length - 1 ? "," : ""}</span>
           ))}
@@ -51,7 +50,7 @@ const Skills = () => (
           {[
             "Flutter",
             "React Native",
-            "SwiftUI (familiar)"
+            "SwiftUI"
           ].map((skill, idx, arr) => (
             <span key={idx} className="me-1">{skill}{idx !== arr.length - 1 ? "," : ""}</span>
           ))}
@@ -75,14 +74,15 @@ const Skills = () => (
         <h4>Database & Cloud Services</h4>
         <div className="d-flex flex-wrap">
           {[
+            "Google Cloud Platform",
+            "AWS",
             "Heroku",
             "Linode",
             "DigitalOcean",
             "Cloudflare",
             "Netlify",
             "Render",
-            "AWS (familiar)",
-            "Firebase (familiar)"
+            "Firebase"
           ].map((skill, idx, arr) => (
             <span key={idx} className="me-1">{skill}{idx !== arr.length - 1 ? "," : ""}</span>
           ))}
@@ -93,14 +93,14 @@ const Skills = () => (
         <h4>Data & Testing</h4>
         <div className="d-flex flex-wrap">
           {[
+            "pandas",
             "REST API Design",
             "GraphQL",
             "JSON",
             "XML",
             "TDD",
             "Google Analytics",
-            "MatPlotLib (familiar)",
-            "pandas (familiar)",
+            "MatPlotLib",
           ].map((skill, idx, arr) => (
             <span key={idx} className="me-1">{skill}{idx !== arr.length - 1 ? "," : ""}</span>
           ))}
@@ -113,6 +113,7 @@ const Skills = () => (
           {
             [
               "git",
+              "Docker",
               "Linux",
               "vim",
               "npm/yarn/bun",
