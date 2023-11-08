@@ -14,7 +14,9 @@ const ContactPage = () => (
                 — but you can also leave your contact details here and I'll get back to you.
               </p>
             </div>
+
             <hr width={67} style={{borderStyle: "dashed", marginBottom: "1.0rem"}}/>
+
             <Form name="contact" method="POST" netlify>
               <Form.Group className="mb-3">
                 <Form.Label>Name</Form.Label>

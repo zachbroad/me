@@ -6,12 +6,35 @@ import foodtruck from "../public/foodtruck.png";
 import discord from "../public/discord.png";
 import go from "../public/go.png";
 import salibas from "../public/salibas.png";
+import categories from "../public/categories.png";
 
 export const PROJECTS = [
   {
+    title: "Categories.LIVE",
+    subheading: "Vue.js + Express.js + Socket.IO",
+    image: categories,
+    points: [
+      "A real-time multiplayer Scattergories-like game built with Vue.js, Express.js, and Socket.IO.",
+      "It uses OpenAI's GPT-4 API to generate new creative prompts and validate user answers.",
+      "The game's AI functionality allows the game to be played by yourself, as opposed to the traditional game where other players must score each others answers... but in theory can support thousands of players!"
+    ],
+    button: {
+      text: "Frontend",
+      link: "https://github.com/zachbroad/scatterclient/"
+    },
+    button2: {
+      text: "Backend",
+      link: "https://github.com/zachbroad/scatterserver/"
+    },
+    button3: {
+      text: "Website",
+      link: "https://categories.live/"
+    },
+  },
+  {
     title: "ECHO for Spotify",
     subheading: "Python/Django + JavaScript/React",
-    image: echo, // replace with your image path
+    image: echo,
     points: [
       "Developed a full-stack mobile & web app for users to explore & share their Spotify listening history & habits with friends.",
       "Built with Django + Django REST Framework as backend & React as a web frontend.",
